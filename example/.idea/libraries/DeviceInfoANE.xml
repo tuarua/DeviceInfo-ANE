@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="DeviceInfoANE" type="flex">
+    <CLASSES>
+      <root url="jar://$DOCUMENTS$/DeviceInfo-ANE/native_extension/ane/DeviceInfoANE.ane!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="https://tuarua.github.io/asdocs/deviceinfoane/index.html" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
