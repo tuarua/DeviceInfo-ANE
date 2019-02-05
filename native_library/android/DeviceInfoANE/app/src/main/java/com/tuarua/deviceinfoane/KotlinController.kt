@@ -58,8 +58,7 @@ class KotlinController : FreKotlinMainController {
         }
 
         val freVersion = FREObject("com.tuarua.DeviceInfoAndroidVersion")
-        if (freVersion == null) trace("freVersion is null")
-        //if (freVersion != null) {
+        if (freVersion != null) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 freVersion["baseOS"] = Build.VERSION.BASE_OS.toFREObject()
                 freVersion["previewSdkInt"] = Build.VERSION.PREVIEW_SDK_INT.toFREObject()
@@ -69,7 +68,7 @@ class KotlinController : FreKotlinMainController {
             freVersion["incremental"] = Build.VERSION.INCREMENTAL.toFREObject()
             freVersion["release"] = Build.VERSION.RELEASE.toFREObject()
             freVersion["sdkInt"] = Build.VERSION.SDK_INT.toFREObject()
-        //}
+        }
         ret["version"] = freVersion
         return ret
     }
