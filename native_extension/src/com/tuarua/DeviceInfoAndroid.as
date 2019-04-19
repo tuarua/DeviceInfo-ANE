@@ -46,11 +46,11 @@ public class DeviceInfoAndroid {
     public var isPhysicalDevice:Boolean;
     public var androidId:String;
     /** An ordered list of 32 bit ABIs supported by this device. The most preferred ABI is the first element in the list.*/
-    public var supported32BitAbis:Array;
+    public var supported32BitAbis:Vector.<String>;
     /** An ordered list of 64 bit ABIs supported by this device. The most preferred ABI is the first element in the list*/
-    public var supported64BitAbis:Array;
+    public var supported64BitAbis:Vector.<String>;
     /** An ordered list of ABIs supported by this device. The most preferred ABI is the first element in the list.*/
-    public var supportedAbis:Array;
+    public var supportedAbis:Vector.<String>;
     public var version:DeviceInfoAndroidVersion;
 
     public function DeviceInfoAndroid() {
