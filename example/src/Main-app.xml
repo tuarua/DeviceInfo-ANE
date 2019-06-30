@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<application xmlns="http://ns.adobe.com/air/application/32.0">
+<application xmlns="http://ns.adobe.com/air/application/33.0">
 
 	<id>com.tuarua.deviceinfoanesample</id>
 	<filename>DeviceInfoANESample</filename>
 	<name>DeviceInfoANESample</name>
-	<versionNumber>1.1.0</versionNumber>
+	<versionNumber>1.2.0</versionNumber>
 
 	<initialWindow>
 		<content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
