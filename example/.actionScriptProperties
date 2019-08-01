@@ -40,7 +40,7 @@
       </libraryPathEntry>
       <libraryPathEntry kind="3" linkType="1" path="libs/starling.swc" useDefaultLinkType="false"/>
       <libraryPathEntry kind="5" linkType="2" path="${DOCUMENTS}/DeviceInfo-ANE/native_extension/ane/DeviceInfoANE.ane"/>
-      <libraryPathEntry kind="5" linkType="2" path="android_dependencies/com.tuarua.frekotlin.ane"/>
+      <libraryPathEntry kind="5" linkType="2" path="android_dependencies/com.tuarua.frekotlin-1.8.0.ane"/>
     </libraryPath>
     <sourceAttachmentPath/>
   </compiler>
@@ -69,7 +69,7 @@
         <airExcludes/>
         <anePaths>
           <anePathEntry path="${DOCUMENTS}/DeviceInfo-ANE/native_extension/ane/DeviceInfoANE.ane"/>
-          <anePathEntry path="android_dependencies/com.tuarua.frekotlin.ane"/>
+          <anePathEntry path="android_dependencies/com.tuarua.frekotlin-1.8.0.ane"/>
         </anePaths>
       </airSettings>
       <multiPlatformSettings enabled="true" hideAneLibSymbols="0" includePlatformLibs="false" platformID="com.adobe.flexide.multiplatform.android.platform" reducedSizePackaging="false" version="1"/>

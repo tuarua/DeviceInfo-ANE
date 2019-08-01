@@ -8,9 +8,6 @@
             <entry library-name="starling" library-level="project">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-name="com.tuarua.frekotlin" library-level="project">
-              <dependency linkage="Merged" />
-            </entry>
             <entry library-name="DeviceInfoANE" library-level="project">
               <dependency linkage="Merged" />
             </entry>
@@ -45,9 +42,6 @@
             <entry library-name="starling" library-level="project">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-name="com.tuarua.frekotlin" library-level="project">
-              <dependency linkage="Merged" />
-            </entry>
             <entry library-name="DeviceInfoANE" library-level="project">
               <dependency linkage="Merged" />
             </entry>
@@ -77,9 +71,6 @@
         <dependencies>
           <entries>
             <entry library-name="starling" library-level="project">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-name="com.tuarua.frekotlin" library-level="project">
               <dependency linkage="Merged" />
             </entry>
             <entry library-name="DeviceInfoANE" library-level="project">

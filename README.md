@@ -26,6 +26,9 @@ PS get_android_dependencies.ps1
 </extensions>
 ```
 
+#### AIR 32 & 33
+This ANE is built against AIR 33 SDK. If you wish to use with AIR 32 you will need to replace dx.jar in lib/android/bin/ with [this one](https://github.com/tuarua/Android-ANE-Dependencies/blob/master/AIR32_patch/lib/android/bin/dx.jar?raw=true)
+
 -------------
 
 ## iOS
