@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/33.0">
+
+	<id>com.tuarua.deviceinfoanesample</id>
+	<filename>DeviceInfoANESample</filename>
+	<name>DeviceInfoANESample</name>
+	<versionNumber>1.2.0</versionNumber>
+
+	<initialWindow>
+		<content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
+        <aspectRatio>portrait</aspectRatio>
+        <autoOrients>false</autoOrients>
+        <fullScreen>true</fullScreen>
+        <renderMode>direct</renderMode>
+        <depthAndStencil>true</depthAndStencil>
+        <visible>true</visible>
+    </initialWindow>
+
+<android>
+        <manifestAdditions><![CDATA[
+			<manifest android:installLocation="auto">
+			    <uses-permission android:name="android.permission.INTERNET"/>
+			</manifest>
+			
+		]]></manifestAdditions>
+    </android>
+
+    <icon>
+        <image76x76>icon76.png</image76x76>
+        <image120x120>icon120.png</image120x120>
+        <image152x152>icon152.png</image152x152>
+        <image167x167>icon167.png</image167x167>
+        <image180x180>icon180.png</image180x180>
+    </icon>
+
+    <extensions>
+    	<extensionID>com.tuarua.frekotlin</extensionID>
+        <extensionID>com.tuarua.DeviceInfoANE</extensionID>
+    </extensions>
+</application>

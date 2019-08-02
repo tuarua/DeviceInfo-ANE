@@ -4,7 +4,7 @@
 	<id>com.tuarua.deviceinfoanesample</id>
 	<filename>DeviceInfoANESample</filename>
 	<name>DeviceInfoANESample</name>
-	<versionNumber>1.1.0</versionNumber>
+	<versionNumber>1.2.0</versionNumber>
 
 	<initialWindow>
 		<content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
@@ -15,15 +15,6 @@
         <depthAndStencil>true</depthAndStencil>
         <visible>true</visible>
     </initialWindow>
-
-<android>
-        <manifestAdditions><![CDATA[
-			<manifest android:installLocation="auto">
-			    <uses-permission android:name="android.permission.INTERNET"/>
-			</manifest>
-			
-		]]></manifestAdditions>
-    </android>
 
     <icon>
         <image76x76>icon76.png</image76x76>
@@ -52,7 +43,6 @@
         <requestedDisplayResolution>high</requestedDisplayResolution>
     </iPhone>
     <extensions>
-    	<extensionID>com.tuarua.frekotlin</extensionID>
         <extensionID>com.tuarua.DeviceInfoANE</extensionID>
     </extensions>
 </application>
