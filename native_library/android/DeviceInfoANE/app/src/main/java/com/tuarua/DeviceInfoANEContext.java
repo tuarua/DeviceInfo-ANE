@@ -14,14 +14,12 @@
  *  limitations under the License.
  */
 package com.tuarua;
-import com.adobe.air.TRActivityResultCallback;
-import com.adobe.air.TRStateChangeCallback;
+
 import com.tuarua.frekotlin.FreKotlinContext;
 import com.tuarua.frekotlin.FreKotlinMainController;
 
-
 @SuppressWarnings({"WeakerAccess"})
-public class DeviceInfoANEContext extends FreKotlinContext implements TRActivityResultCallback, TRStateChangeCallback {
+public class DeviceInfoANEContext extends FreKotlinContext {
 
     @SuppressWarnings("WeakerAccess")
     public DeviceInfoANEContext(String name, FreKotlinMainController controller, String[] functions) {

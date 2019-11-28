@@ -3,21 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		901E9B38220258AC009B2C79 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E9B37220258AC009B2C79 /* UIDevice.swift */; };
-		CE05603F1FB25CE200D06976 /* FreSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE05603E1FB25CE200D06976 /* FreSwift.framework */; };
-		CE0560401FB25CE200D06976 /* FreSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE05603E1FB25CE200D06976 /* FreSwift.framework */; };
-		CE0560431FB25D1B00D06976 /* SwiftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0560411FB25D1B00D06976 /* SwiftController.swift */; };
-		CE0560451FB25DD000D06976 /* DeviceInfoANE_FW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE87F4831FB259FA005CF7DF /* DeviceInfoANE_FW.framework */; };
-		CE05604A1FB25DF600D06976 /* DeviceInfoANE_oc.h in Headers */ = {isa = PBXBuildFile; fileRef = CE87F4771FB259DB005CF7DF /* DeviceInfoANE_oc.h */; };
-		CE05604E1FB25E8E00D06976 /* FreMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = CE05604D1FB25E8E00D06976 /* FreMacros.h */; };
-		CE05604F1FB25E9F00D06976 /* FreMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = CE05604D1FB25E8E00D06976 /* FreMacros.h */; };
-		CE87F4871FB259FA005CF7DF /* DeviceInfoANE_FW.h in Headers */ = {isa = PBXBuildFile; fileRef = CE87F4851FB259FA005CF7DF /* DeviceInfoANE_FW.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CEBD78C92057198700ABE05A /* SwiftController+FreSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD78C82057198700ABE05A /* SwiftController+FreSwift.swift */; };
-		CEBD78CB20571A5200ABE05A /* DeviceInfoANE.m in Sources */ = {isa = PBXBuildFile; fileRef = CE87F4781FB259DB005CF7DF /* DeviceInfoANE.m */; };
+		901E9B38220258AC009B2C79 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E9B37220258AC009B2C79 /* UIDevice.swift */; platformFilter = ios; };
+		CE05603F1FB25CE200D06976 /* FreSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE05603E1FB25CE200D06976 /* FreSwift.framework */; platformFilter = ios; };
+		CE0560401FB25CE200D06976 /* FreSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE05603E1FB25CE200D06976 /* FreSwift.framework */; platformFilter = ios; };
+		CE0560431FB25D1B00D06976 /* SwiftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0560411FB25D1B00D06976 /* SwiftController.swift */; platformFilter = ios; };
+		CE0560451FB25DD000D06976 /* DeviceInfoANE_FW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE87F4831FB259FA005CF7DF /* DeviceInfoANE_FW.framework */; platformFilter = ios; };
+		CE05604A1FB25DF600D06976 /* DeviceInfoANE_oc.h in Headers */ = {isa = PBXBuildFile; fileRef = CE87F4771FB259DB005CF7DF /* DeviceInfoANE_oc.h */; platformFilter = ios; };
+		CE05604E1FB25E8E00D06976 /* FreMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = CE05604D1FB25E8E00D06976 /* FreMacros.h */; platformFilter = ios; };
+		CE05604F1FB25E9F00D06976 /* FreMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = CE05604D1FB25E8E00D06976 /* FreMacros.h */; platformFilter = ios; };
+		CE87F4871FB259FA005CF7DF /* DeviceInfoANE_FW.h in Headers */ = {isa = PBXBuildFile; fileRef = CE87F4851FB259FA005CF7DF /* DeviceInfoANE_FW.h */; platformFilter = ios; settings = {ATTRIBUTES = (Public, ); }; };
+		CEBD78C92057198700ABE05A /* SwiftController+FreSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD78C82057198700ABE05A /* SwiftController+FreSwift.swift */; platformFilter = ios; };
+		CEBD78CB20571A5200ABE05A /* DeviceInfoANE.m in Sources */ = {isa = PBXBuildFile; fileRef = CE87F4781FB259DB005CF7DF /* DeviceInfoANE.m */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,7 +199,7 @@
 		CE87F45D1FB259C9005CF7DF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Tua Rua Ltd";
 				TargetAttributes = {
 					CE87F4741FB259DB005CF7DF = {
@@ -209,17 +209,18 @@
 					};
 					CE87F4821FB259FA005CF7DF = {
 						CreatedOnToolsVersion = 8.3;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1120;
 						ProvisioningStyle = Manual;
 					};
 				};
 			};
 			buildConfigurationList = CE87F4601FB259C9005CF7DF /* Build configuration list for PBXProject "DeviceInfoANE" */;
 			compatibilityVersion = "Xcode 10.0";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CE87F45C1FB259C9005CF7DF;
 			productRefGroup = CE87F4661FB259C9005CF7DF /* Products */;
@@ -285,6 +286,7 @@
 /* Begin PBXTargetDependency section */
 		CE0560471FB25DD600D06976 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = CE87F4821FB259FA005CF7DF /* DeviceInfoANE_FW */;
 			targetProxy = CE0560461FB25DD600D06976 /* PBXContainerItemProxy */;
 		};
@@ -295,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -353,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -477,6 +481,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.3.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuarua.DeviceInfoANE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -485,7 +490,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -517,6 +522,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.3.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuarua.DeviceInfoANE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -525,7 +531,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

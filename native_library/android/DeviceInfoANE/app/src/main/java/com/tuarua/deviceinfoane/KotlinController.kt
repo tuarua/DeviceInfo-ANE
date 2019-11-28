@@ -92,7 +92,7 @@ class KotlinController : FreKotlinMainController {
                 || Build.PRODUCT.contains("simulator"))
     }
 
-    override val TAG: String
+    override val TAG: String?
         get() = this::class.java.simpleName
     private var _context: FREContext? = null
     override var context: FREContext?

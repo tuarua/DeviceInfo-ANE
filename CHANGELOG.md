@@ -1,3 +1,8 @@
+### 1.3.0
+- AND: Updated to FreKotlin 1.9.1
+- iOS: Updated to FreSwift 4.1.0
+- iOS: add 2019 models
+
 ### 1.2.0
 - AND: Updated to FreKotlin 1.8.0
 - Updated to AIR 33 ARM 64bit
