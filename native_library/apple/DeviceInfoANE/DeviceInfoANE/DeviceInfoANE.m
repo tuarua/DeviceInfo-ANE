@@ -17,7 +17,7 @@
 #import "DeviceInfoANE_oc.h"
 #import <DeviceInfoANE_FW/DeviceInfoANE_FW.h>
 
-#define FRE_OBJC_BRIDGE TRDVI_FlashRuntimeExtensionsBridge // use unique prefix throughout to prevent clashes with other ANEs
+#define FRE_OBJC_BRIDGE TRDVI_FlashRuntimeExtensionsBridge
 @interface FRE_OBJC_BRIDGE : NSObject<FreSwiftBridgeProtocol>
 @end
 @implementation FRE_OBJC_BRIDGE {
@@ -26,21 +26,14 @@ FRE_OBJC_BRIDGE_FUNCS
 @end
 
 @implementation DeviceInfoANE_LIB
-SWIFT_DECL(TRDVI) // use unique prefix throughout to prevent clashes with other ANEs
+SWIFT_DECL(TRDVI)
 CONTEXT_INIT(TRDVI) {
     SWIFT_INITS(TRDVI)
-    
-    /**************************************************************************/
-    /******* MAKE SURE TO ADD FUNCTIONS HERE THE SAME AS SWIFT CONTROLLER *****/
-    /**************************************************************************/
     
     static FRENamedFunction extensionFunctions[] =
     {
          MAP_FUNCTION(TRDVI, init)
     };
-    
-    /**************************************************************************/
-    /**************************************************************************/
     
     SET_FUNCTIONS
     
