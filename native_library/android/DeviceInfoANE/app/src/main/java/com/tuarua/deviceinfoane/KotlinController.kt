@@ -30,44 +30,44 @@ class KotlinController : FreKotlinMainController {
     @SuppressLint("HardwareIds")
     fun init(ctx: FREContext, argv: FREArgv): FREObject? {
         val ret = FREObject("com.tuarua.DeviceInfoAndroid") ?: return null
-        ret["board"] = Build.BOARD.toFREObject()
-        ret["bootloader"] = Build.BOOTLOADER.toFREObject()
-        ret["brand"] = Build.BRAND.toFREObject()
-        ret["device"] = Build.DEVICE.toFREObject()
-        ret["display"] = Build.DISPLAY.toFREObject()
-        ret["fingerprint"] = Build.FINGERPRINT.toFREObject()
-        ret["hardware"] = Build.HARDWARE.toFREObject()
-        ret["host"] = Build.HOST.toFREObject()
-        ret["id"] = Build.ID.toFREObject()
-        ret["manufacturer"] = Build.MANUFACTURER.toFREObject()
-        ret["model"] = Build.MODEL.toFREObject()
-        ret["product"] = Build.PRODUCT.toFREObject()
-        ret["tags"] = Build.TAGS.toFREObject()
-        ret["type"] = Build.TYPE.toFREObject()
-        ret["isPhysicalDevice"] = (!isEmulator()).toFREObject()
+        ret["board"] = Build.BOARD
+        ret["bootloader"] = Build.BOOTLOADER
+        ret["brand"] = Build.BRAND
+        ret["device"] = Build.DEVICE
+        ret["display"] = Build.DISPLAY
+        ret["fingerprint"] = Build.FINGERPRINT
+        ret["hardware"] = Build.HARDWARE
+        ret["host"] = Build.HOST
+        ret["id"] = Build.ID
+        ret["manufacturer"] = Build.MANUFACTURER
+        ret["model"] = Build.MODEL
+        ret["product"] = Build.PRODUCT
+        ret["tags"] = Build.TAGS
+        ret["type"] = Build.TYPE
+        ret["isPhysicalDevice"] = !isEmulator()
         val appContext = ctx.activity.applicationContext
         if (appContext != null) {
             ret["androidId"] = Settings.Secure.getString(appContext.contentResolver,
-                    Settings.Secure.ANDROID_ID).toFREObject()
+                    Settings.Secure.ANDROID_ID)
         }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            ret["supported32BitAbis"] = Build.SUPPORTED_32_BIT_ABIS.toList().toFREObject()
-            ret["supported64BitAbis"] = Build.SUPPORTED_64_BIT_ABIS.toList().toFREObject()
-            ret["supportedAbis"] = Build.SUPPORTED_ABIS.toList().toFREObject()
+            ret["supported32BitAbis"] = Build.SUPPORTED_32_BIT_ABIS.toList()
+            ret["supported64BitAbis"] = Build.SUPPORTED_64_BIT_ABIS.toList()
+            ret["supportedAbis"] = Build.SUPPORTED_ABIS.toList()
         }
 
         val freVersion = FREObject("com.tuarua.DeviceInfoAndroidVersion")
         if (freVersion != null) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                freVersion["baseOS"] = Build.VERSION.BASE_OS.toFREObject()
-                freVersion["previewSdkInt"] = Build.VERSION.PREVIEW_SDK_INT.toFREObject()
-                freVersion["securityPatch"] = Build.VERSION.SECURITY_PATCH.toFREObject()
+                freVersion["baseOS"] = Build.VERSION.BASE_OS
+                freVersion["previewSdkInt"] = Build.VERSION.PREVIEW_SDK_INT
+                freVersion["securityPatch"] = Build.VERSION.SECURITY_PATCH
             }
-            freVersion["codename"] = Build.VERSION.CODENAME.toFREObject()
-            freVersion["incremental"] = Build.VERSION.INCREMENTAL.toFREObject()
-            freVersion["release"] = Build.VERSION.RELEASE.toFREObject()
-            freVersion["sdkInt"] = Build.VERSION.SDK_INT.toFREObject()
+            freVersion["codename"] = Build.VERSION.CODENAME
+            freVersion["incremental"] = Build.VERSION.INCREMENTAL
+            freVersion["release"] = Build.VERSION.RELEASE
+            freVersion["sdkInt"] = Build.VERSION.SDK_INT
         }
         ret["version"] = freVersion
         return ret
