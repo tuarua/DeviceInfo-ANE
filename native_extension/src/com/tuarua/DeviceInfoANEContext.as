@@ -24,7 +24,6 @@ public class DeviceInfoANEContext {
     internal static const NAME:String = "DeviceInfoANE";
     internal static const TRACE:String = "TRACE";
     private static var _context:ExtensionContext;
-    private static var _isDisposed:Boolean;
 
     public function DeviceInfoANEContext() {
     }
@@ -34,7 +33,6 @@ public class DeviceInfoANEContext {
             try {
                 _context = ExtensionContext.createExtensionContext("com.tuarua." + NAME, null);
                 _context.addEventListener(StatusEvent.STATUS, gotEvent);
-                _isDisposed = false;
             } catch (e:Error) {
                 throw new Error("ANE " + NAME + " not created properly.  Future calls will fail.");
             }
@@ -54,15 +52,10 @@ public class DeviceInfoANEContext {
         if (!_context) {
             return;
         }
-        _isDisposed = true;
         trace("[" + NAME + "] Unloading ANE...");
         _context.removeEventListener(StatusEvent.STATUS, gotEvent);
         _context.dispose();
         _context = null;
-    }
-
-    public static function get isDisposed():Boolean {
-        return _isDisposed;
     }
 }
 }
