@@ -31,9 +31,9 @@ public class DeviceInfo extends EventDispatcher {
         if (!os.isIos) return null;
         if (_ios != null) return _ios;
         if (DeviceInfoANEContext.context) {
-            var theRet:* = DeviceInfoANEContext.context.call("init");
-            if (theRet is ANEError) throw theRet as ANEError;
-            _ios = theRet as DeviceInfoIos;
+            var ret:* = DeviceInfoANEContext.context.call("init");
+            if (ret is ANEError) throw ret as ANEError;
+            _ios = ret as DeviceInfoIos;
         }
         return _ios;
     }
@@ -42,9 +42,9 @@ public class DeviceInfo extends EventDispatcher {
         if (!os.isAndroid) return null;
         if (_android != null) return _android;
         if (DeviceInfoANEContext.context) {
-            var theRet:* = DeviceInfoANEContext.context.call("init");
-            if (theRet is ANEError) throw theRet as ANEError;
-            _android = theRet as DeviceInfoAndroid;
+            var ret:* = DeviceInfoANEContext.context.call("init");
+            if (ret is ANEError) throw ret as ANEError;
+            _android = ret as DeviceInfoAndroid;
         }
         return _android;
     }
