@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="Flex" version="4">
-  <component name="FlexBuildConfigurationManager" active="iOS Device">
+  <component name="FlexBuildConfigurationManager" active="Android Device">
     <configurations>
       <configuration name="Android Device" target-platform="Mobile" pure-as="true" main-class="Main" output-file="Main.swf" output-folder="$MODULE_DIR$/bin-release">
         <dependencies>
@@ -11,7 +11,7 @@
             <entry library-name="DeviceInfoANE" library-level="project">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-name="com.tuarua.frekotlin-1.8.0" library-level="project">
+            <entry library-name="com.tuarua.frekotlin-1.9.5" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -45,9 +45,6 @@
             <entry library-name="DeviceInfoANE" library-level="project">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-name="com.tuarua.frekotlin-1.8.0" library-level="project">
-              <dependency linkage="Merged" />
-            </entry>
           </entries>
           <sdk name="AIRSDK_32" />
         </dependencies>
@@ -64,7 +61,7 @@
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Assets.car" path-in-package="Assets.car" />
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/system" path-in-package="." />
           </files-to-package>
-          <AirSigningOptions keystore-path="$USER_HOME$/Documents/appleCertsProv/2018/dev/tua_rua_dev_2018.p12" provisioning-profile-path="$USER_HOME$/Documents/appleCertsProv/2018/dev/Tua_Rua_Dev_Provisioning-2.mobileprovision" />
+          <AirSigningOptions keystore-path="$USER_HOME$/Documents/appleCertsProv/2020/dev/tua_rua_dev_2020.p12" provisioning-profile-path="$USER_HOME$/Documents/appleCertsProv/2020/dev/Tua_Rua_Dev_Provisioning.mobileprovision" />
         </packaging-ios>
       </configuration>
       <configuration name="iOS Device" target-platform="Mobile" pure-as="true" main-class="Main" output-file="iOS_Device.swf" output-folder="$MODULE_DIR$/bin-release">
@@ -74,9 +71,6 @@
               <dependency linkage="Merged" />
             </entry>
             <entry library-name="DeviceInfoANE" library-level="project">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-name="com.tuarua.frekotlin-1.8.0" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -95,7 +89,7 @@
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Assets.car" path-in-package="Assets.car" />
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/system" path-in-package="." />
           </files-to-package>
-          <AirSigningOptions keystore-path="$USER_HOME$/Documents/appleCertsProv/2019/dev/tua_rua_dev_2019.p12" provisioning-profile-path="$USER_HOME$/Documents/appleCertsProv/2019/dev/Tua_Rua_Dev_Provisioning.mobileprovision" />
+          <AirSigningOptions keystore-path="$USER_HOME$/Documents/appleCertsProv/2020/dev/tua_rua_dev_2020.p12" provisioning-profile-path="$USER_HOME$/Documents/appleCertsProv/2020/dev/Tua_Rua_Dev_Provisioning.mobileprovision" />
         </packaging-ios>
       </configuration>
     </configurations>
@@ -109,11 +103,7 @@
     <orderEntry type="jdk" jdkName="AIRSDK_32&#9;AIRSDK_33" jdkType="__CompositeFlexSdk__" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="starling" level="project" />
-    <orderEntry type="library" exported="" name="com.tuarua.frekotlin" level="project" />
-    <orderEntry type="library" exported="" name="BatteryANE" level="project" />
-    <orderEntry type="library" exported="" name="com.google.code.gson.gson-2.8.1" level="project" />
-    <orderEntry type="library" exported="" name="com.google.code.gson.gson-2.8.4" level="project" />
     <orderEntry type="library" exported="" name="DeviceInfoANE" level="project" />
-    <orderEntry type="library" exported="" name="com.tuarua.frekotlin-1.8.0" level="project" />
+    <orderEntry type="library" exported="" name="com.tuarua.frekotlin-1.9.5" level="project" />
   </component>
 </module>
