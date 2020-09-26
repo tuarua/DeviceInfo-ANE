@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <application xmlns="http://ns.adobe.com/air/application/33.1">
 
-	<id>com.tuarua.deviceinfoanesample</id>
-	<filename>DeviceInfoANESample</filename>
-	<name>DeviceInfoANESample</name>
-	<versionNumber>1.3.0</versionNumber>
+    <id>com.tuarua.deviceinfoanesample</id>
+    <filename>DeviceInfoANESample</filename>
+    <name>DeviceInfoANESample</name>
+    <versionNumber>1.5.0</versionNumber>
 
-	<initialWindow>
-		<content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
+    <initialWindow>
+        <content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
         <aspectRatio>portrait</aspectRatio>
         <autoOrients>false</autoOrients>
         <fullScreen>true</fullScreen>
@@ -16,7 +16,7 @@
         <visible>true</visible>
     </initialWindow>
 
-<android>
+    <android>
         <manifestAdditions><![CDATA[
 			<manifest android:installLocation="auto">
 			    <uses-permission android:name="android.permission.INTERNET"/>
@@ -24,6 +24,24 @@
 			
 		]]></manifestAdditions>
     </android>
+
+    <iPhone>
+        <!-- A list of plist key/value pairs to be added to the application Info.plist -->
+        <InfoAdditions>
+            <![CDATA[
+            <key>UIDeviceFamily</key>
+            <array>
+                <!-- iPhone and iPod touch devices -->
+                <string>1</string>
+                <!-- iPad devices -->
+                <string>2</string>
+            </array>
+            <key>MinimumOSVersion</key>
+            <string>9.0</string>
+            ]]>
+        </InfoAdditions>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+    </iPhone>
 
     <icon>
         <image76x76>icon76.png</image76x76>
@@ -34,7 +52,7 @@
     </icon>
 
     <extensions>
-    	<extensionID>com.tuarua.frekotlin</extensionID>
+        <extensionID>com.tuarua.frekotlin</extensionID>
         <extensionID>com.tuarua.DeviceInfoANE</extensionID>
     </extensions>
 </application>
