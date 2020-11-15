@@ -1,58 +1,58 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <application xmlns="http://ns.adobe.com/air/application/33.1">
-
-    <id>com.tuarua.deviceinfoanesample</id>
-    <filename>DeviceInfoANESample</filename>
-    <name>DeviceInfoANESample</name>
-    <versionNumber>1.5.0</versionNumber>
-
-    <initialWindow>
-        <content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
-        <aspectRatio>portrait</aspectRatio>
-        <autoOrients>false</autoOrients>
-        <fullScreen>true</fullScreen>
-        <renderMode>direct</renderMode>
-        <depthAndStencil>true</depthAndStencil>
-        <visible>true</visible>
-    </initialWindow>
-
-    <android>
-        <manifestAdditions><![CDATA[
-			<manifest android:installLocation="auto">
-			    <uses-permission android:name="android.permission.INTERNET"/>
-			</manifest>
-			
-		]]></manifestAdditions>
-    </android>
-
-    <iPhone>
-        <!-- A list of plist key/value pairs to be added to the application Info.plist -->
-        <InfoAdditions>
-            <![CDATA[
-            <key>UIDeviceFamily</key>
-            <array>
-                <!-- iPhone and iPod touch devices -->
-                <string>1</string>
-                <!-- iPad devices -->
-                <string>2</string>
-            </array>
-            <key>MinimumOSVersion</key>
-            <string>9.0</string>
-            ]]>
-        </InfoAdditions>
-        <requestedDisplayResolution>high</requestedDisplayResolution>
-    </iPhone>
-
-    <icon>
-        <image76x76>icon76.png</image76x76>
-        <image120x120>icon120.png</image120x120>
-        <image152x152>icon152.png</image152x152>
-        <image167x167>icon167.png</image167x167>
-        <image180x180>icon180.png</image180x180>
-    </icon>
-
-    <extensions>
-        <extensionID>com.tuarua.frekotlin</extensionID>
-        <extensionID>com.tuarua.DeviceInfoANE</extensionID>
-    </extensions>
+  <id>com.tuarua.deviceinfoanesample</id>
+  <filename>DeviceInfoANESample</filename>
+  <name>DeviceInfoANESample</name>
+  <versionNumber>1.6.0</versionNumber>
+  <initialWindow>
+    <content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
+    <aspectRatio>portrait</aspectRatio>
+    <autoOrients>false</autoOrients>
+    <fullScreen>true</fullScreen>
+    <renderMode>direct</renderMode>
+    <depthAndStencil>true</depthAndStencil>
+    <visible>true</visible>
+  </initialWindow>
+  <android>
+    <manifestAdditions><![CDATA[<manifest android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<application android:enabled="true">
+		<meta-data android:name="android.max_aspect" android:value="2.1" />
+		<activity android:excludeFromRecents="false" android:hardwareAccelerated="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+	</application>
+</manifest>]]></manifestAdditions>
+  </android>
+  <iPhone>
+    <!-- A list of plist key/value pairs to be added to the application Info.plist -->
+    <InfoAdditions><![CDATA[
+	<key>MinimumOSVersion</key>
+	<string>9.0</string>
+	<key>UIDeviceFamily</key>
+	<array>
+		<string>1</string>
+		<string>2</string>
+	</array>
+]]></InfoAdditions>
+    <requestedDisplayResolution>high</requestedDisplayResolution>
+  </iPhone>
+  <icon>
+    <image76x76>icon76.png</image76x76>
+    <image120x120>icon120.png</image120x120>
+    <image152x152>icon152.png</image152x152>
+    <image167x167>icon167.png</image167x167>
+    <image180x180>icon180.png</image180x180>
+  </icon>
+  <extensions>
+    <extensionID>com.tuarua.DeviceInfoANE</extensionID>
+    <extensionID>com.tuarua.frekotlin</extensionID>
+  </extensions>
 </application>
