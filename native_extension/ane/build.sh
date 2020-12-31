@@ -9,7 +9,7 @@ PROJECTNAME=DeviceInfoANE
 fwSuffix="_FW"
 libSuffix="_LIB"
 
-AIR_SDK="/Users/eoinlandy/SDKs/AIRSDK_33.1.1.300"
+AIR_SDK="/Users/eoinlandy/SDKs/AIRSDK_33.1.1.345"
 
 if [ ! -d "$pathtome/../../native_library/apple/$PROJECTNAME/Build/Products/Release-iphonesimulator/" ]; then
 echo "No Simulator build. Build using Xcode"
