@@ -3,7 +3,7 @@
   <id>com.tuarua.deviceinfoanesample</id>
   <filename>DeviceInfoANESample</filename>
   <name>DeviceInfoANESample</name>
-  <versionNumber>1.6.0</versionNumber>
+  <versionNumber>1.7.0</versionNumber>
   <initialWindow>
     <content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
     <aspectRatio>portrait</aspectRatio>
